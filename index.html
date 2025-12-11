@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Mood Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Трекер настроения</h1>
+    <p>Выбери своё настроение за сегодня 👇</p>
+
+    <div class="mood-buttons">
+        <button onclick="saveMood('😀')">😀 Отлично</button>
+        <button onclick="saveMood('🙂')">🙂 Хорошо</button>
+        <button onclick="saveMood('😐')">😐 Нормально</button>
+        <button onclick="saveMood('☹️')">☹️ Плохо</button>
+    </div>
+
+    <h2>Статистика</h2>
+    <canvas id="moodChart" width="300" height="200"></canvas>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
